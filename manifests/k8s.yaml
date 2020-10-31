@@ -14,9 +14,10 @@ spec:
     spec:
       containers:
       - name: webapp-and-kubernets
-        image: okteto/webapp-and-kubernets:latest
+        image: okteto/webapp-and-kubernets:python
+        imagePullPolicy: Never
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
 
 ---
 apiVersion: v1
