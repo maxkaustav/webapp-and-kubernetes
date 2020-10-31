@@ -13,9 +13,8 @@ spec:
         app: webapp-and-kubernets
     spec:
       containers:
-      - name: wak1
-        image: okteto/wak1:latest
-        imagePullPolicy: Never
+      - name: webapp-and-kubernets
+        image: okteto/webapp-and-kubernets:latest
         ports:
         - containerPort: 8080
 
