@@ -5,5 +5,5 @@ WORKDIR /app
 ADD . /app/
 RUN python install -r requirements.txt
 
-EXPOSE
+EXPOSE 5000
 CMD ["python","/app/render.py"]
