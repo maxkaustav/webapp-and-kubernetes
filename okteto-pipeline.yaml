@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/webapp-and-kubernets:latest
+  - okteto build -f DOCKER/Dockerfile -t okteto.dev/webapp-and-kubernets:latest
   - kubectl apply -f manifests/k8s.yaml
